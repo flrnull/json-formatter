@@ -143,7 +143,7 @@ JSONFormatter = (function() {
 
     $('.toggle').next().slideUp().end().text(' + ');
 
-    $('.toggle').live('click', function() {
+    $('.toggle').on('click', function() {
       if($(this).next().is(":visible")) {
         $(this).next().slideUp().end().text(' + ');
       }
